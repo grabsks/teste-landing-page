@@ -2,10 +2,12 @@ Olá, esta é a minha Landing Page referente ao teste técnico da Alpes One.
 
 ### Siga os seguintes passos para poder rodar este projeto na sua máquina:
 - Baixe e instale o node e o yarn.
-	https://nodejs.org/en/
+	https://nodejs.org/en/ 
+	
 	https://classic.yarnpkg.com/en/docs/install
 
 - Baixe o Xampp para rodar o projeto localmente.
+- 
 	https://www.apachefriends.org/pt_br/index.html
 
 - Após baixar tudo, abra no seu gerenciador de arquivos o diretório "C:\xampp\htdocs", e transfira os arquivos deste projeto para lá .
