@@ -1,4 +1,4 @@
-##Esta é a minha Landing Page referente ao teste técnico da Alpes One.
+Olá, esta é a minha Landing Page referente ao teste técnico da Alpes One.
 
 ### Siga os seguintes passos para poder rodar este projeto na sua máquina:
 - Baixe e instale o node e o yarn.
