@@ -1,0 +1,376 @@
+@font-face {
+	font-family: BMW;
+	src: url(../../src/fonts/BMWTypeNext-Light.ttf);
+}
+@font-face {
+	font-family: BMW bold;
+	src: url(../../src/fonts/BMWTypeNext-Bold.ttf);
+}
+
+:root {
+	/* Colors */
+	--color-000000: #fff;
+	--button-primary-color: #1C69D4;
+	--button-secondary-color: #000;
+	--button-whatsapp-color: #25D366;
+	--button-link-color: #666666;
+
+	--hover-button-primary-color: #0351BE;
+	--hover-button-secondary-color: #575757;
+	--hover-button-whatsapp-color: #35AA61;
+	--hover-button-link-color: #1C69D4;
+
+	/* Font/text values */
+	--font-family-bmw: BMW;
+	--font-family-bmw-bold: BMW bold;
+	--font-style-normal: normal;
+	--font-weight-300: 300px;
+	--font-weight-bold: bold;
+	--font-size-10: 10px;
+	--font-size-12: 12px;
+	--font-size-14: 14px;
+	--font-size-16: 16px;
+	--font-size-18: 18px;
+	--font-size-20: 20px;
+	--font-size-30: 30px;
+	--font-size-40: 40px;
+	--character-spacing-0: 0px;
+	--decoration-underline: underline;
+	--text-transform-uppercase: uppercase;
+
+	/* Spacing */
+	--stiky-margin: 38px;
+	--margin-20: 20px;
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	max-width: 71%;
+}
+
+
+/* Navs */
+.desktop-nav {
+	width: 100%;
+	height: 152px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.desktop-nav .nav-button {
+	font: normal normal bold var(--font-size-14)/19px BMW;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	padding: 12px 18px;
+	height: 43px;
+	text-transform: uppercase;
+}
+.desktop-nav .nav-button img {
+	width: 19px;
+	height: 19px;
+	vertical-align: bottom;
+	margin-right: 3px;
+}
+.desktop-nav .nav-link-group {
+	margin-top: 18px;
+}
+.desktop-nav .nav-link {
+	display: inline;
+	font-size: var(--font-size-14);
+	margin-right: 52px;
+	font-family: var(--font-family-bmw-bold);
+	font-weight: var(--font-weight-bold);
+	padding: initial;
+	color: var(--button-link-color);
+}
+.desktop-nav .nav-link:hover {
+	cursor: pointer;
+}
+
+.mobile-nav {
+	width: 100%;
+	height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+// .desktop-nav .nav-button {
+// 	font: normal normal bold var(--font-size-14)/19px BMW;
+// 	margin-right: 25px;
+// 	margin-bottom: 10px;
+// 	padding: 12px 18px;
+// 	height: 43px;
+// 	text-transform: uppercase;
+// }
+// .desktop-nav .nav-button img {
+// 	width: 19px;
+// 	height: 19px;
+// 	vertical-align: bottom;
+// 	margin-right: 3px;
+// }
+// .desktop-nav .nav-link-group {
+// 	margin-top: 18px;
+// }
+// .desktop-nav .nav-link {
+// 	display: inline;
+// 	font-size: var(--font-size-14);
+// 	margin-right: 52px;
+// 	font-family: var(--font-family-bmw-bold);
+// 	font-weight: var(--font-weight-bold);
+// 	padding: initial;
+// 	color: var(--button-link-color);
+// }
+// .desktop-nav .nav-link:hover {
+// 	cursor: pointer;
+// }
+
+.sticky-nav {
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: #00000029 0 3px 6px;
+}
+.sticky-nav img {
+	height: 60%;
+	margin-left: var(--left-stiky-margin);
+}
+.sticky-nav button {
+	height: 100%;
+	padding: 72px var(--margin-20);
+}
+
+@media screen and (max-width: 991px) {
+	.header-logo {
+		width: 34.5px;
+		height: 34.5px;
+	}
+}
+
+
+/* Products */
+.desktop-dropdown {
+	display: none;
+	height: 385px;
+	width: 100%;
+	position: absolute;
+	top: 152px;
+	left: 0;
+	z-index: 20;
+	padding: 30px;
+	background-color: var(--color-000000);
+	box-shadow: 0px 3px 6px #00000029;
+	cursor: pointer;
+}
+
+
+
+/* Banner */
+.desktop-banners .banner {
+	width: 100%;
+	z-index: -1;
+}
+.desktop-banners .desktop-cotation-form {
+	background-color: var(--color-000000);
+	padding: var(--margin-20);
+	position: absolute;
+    right: 15%;
+    top: 30%;
+	text-align: center;
+}
+.desktop-banners .cotation-header {
+	font-size: var(--font-size-20);
+	padding: 10px;
+	font-family: var(--font-family-bmw);
+}
+.desktop-banners .cotation-header img {
+	width: 23px;
+	height: 23px;
+	margin-right: 10px;
+}
+
+
+/* Products */
+.products-block {
+	align-items: center;
+	text-align: center;
+}
+.products-block .block-title {
+	font: normal normal 300 var(--font-size-40)/48px BMW;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+.product {
+	margin-bottom: 30px;
+}
+.product .product-photo:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.product .product-description {
+	margin-left: var(--margin-20);
+}
+.product .product-description h5 {
+	margin-top: 16px;
+	text-align: left;
+	font: normal normal 300 var(--font-size-20)/26px BMW;
+}
+.product .product-btns .btn {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 28px;
+	margin-right: 10px;
+	width: 96%;
+}
+.product .social-medias p {
+	text-align: left;
+	margin-top: 24px;
+	color: #666;
+	font: normal normal 300 12px/15px BMW;
+}
+.product .social-medias p img {
+	width: 24px;
+	height: 24px;
+	margin-left: 14px;
+}
+
+
+/* Footer */
+.desktop-footer {
+	margin-top: 70px;
+	padding: 40px;
+	background-color: #E6E6E6;
+}
+.desktop-footer p {
+	font: normal normal 300 var(--font-size-14)/22px BMW;
+	text-align: center;
+}
+.desktop-footer .footer-bottom {
+	align-items: center;
+	margin-top: 80px;
+}
+.desktop-footer .footer-bottom p {
+	font-size: 12px;
+}
+.desktop-footer .footer-bottom .brand {
+	width: 50px;
+	height: 50px;
+}
+.desktop-footer .footer-bottom .logo {
+	margin-left: 10px;
+}
+
+.sticky-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	box-shadow: #00000029 0 -3px 6px;
+}
+
+
+/* Buttons */
+.btn {
+	font-size: var(--font-size-14);
+	font-family: var(--font-family-bmw);
+	font-weight: var(--font-weight-bold);
+	color: var(--color-000000);
+	letter-spacing: 0px;
+	cursor: pointer;
+	border: 0;
+	border-radius: 0;
+}
+
+.btn-link {
+	background-color: transparent;
+	color: var(--button-link-color);
+}
+.btn-primary {
+	background-color: var(--button-primary-color);
+}
+.btn-secondary {
+	background-color: var(--button-secondary-color);
+}
+.btn-whatsapp {
+	background-color: var(--button-whatsapp-color);
+}
+
+.btn-link:hover {
+	color: var(--hover-button-link-color);
+}
+.btn-primary:hover {
+	background-color: var(--hover-button-primary-color);
+}
+.btn-secondary:hover {
+	background-color: var(--hover-button-secondary-color);
+}
+.btn-whatsapp:hover {
+	background-color: var(--hover-button-whatsapp-color);
+}
+
+
+/* Inputs */
+.form-group {
+	position: relative;
+	padding: 15px 0 0;
+	margin-top: 10px;
+	width: 50%;
+}
+.form-field {
+	border: 0;
+	border-bottom: 1px solid #666;
+	color: #666;
+	outline: 0;
+	font-size: 1.3rem;
+	padding: 7px 0;
+	background: transparent;
+	transition: border-color 0.2s;
+  
+	::placeholder {
+		color: transparent !important;
+	}
+  
+	&:placeholder-shown ~ .form-label {
+		font-size: 1.3rem;
+		cursor: text;
+		top: var(--margin-20);
+	}
+}
+.form-label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #666;
+}
+.form-field:focus {
+	~ .form-label {
+		position: absolute;
+		top: 0;
+		display: block;
+		transition: 0.2s;
+		font-size: 1rem;
+	}
+	padding-bottom: 6px;
+	border-width: 2px;
+	// border-image: linear-gradient(to right, $primary,$secondary);
+	border-image-slice: 1;
+}
+
+.form-field{
+	&:required,&:invalid { box-shadow:none; }
+}	
