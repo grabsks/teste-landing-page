@@ -101,35 +101,18 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
-// .desktop-nav .nav-button {
-// 	font: normal normal bold var(--font-size-14)/19px BMW;
-// 	margin-right: 25px;
-// 	margin-bottom: 10px;
-// 	padding: 12px 18px;
-// 	height: 43px;
-// 	text-transform: uppercase;
-// }
-// .desktop-nav .nav-button img {
-// 	width: 19px;
-// 	height: 19px;
-// 	vertical-align: bottom;
-// 	margin-right: 3px;
-// }
-// .desktop-nav .nav-link-group {
-// 	margin-top: 18px;
-// }
-// .desktop-nav .nav-link {
-// 	display: inline;
-// 	font-size: var(--font-size-14);
-// 	margin-right: 52px;
-// 	font-family: var(--font-family-bmw-bold);
-// 	font-weight: var(--font-weight-bold);
-// 	padding: initial;
-// 	color: var(--button-link-color);
-// }
-// .desktop-nav .nav-link:hover {
-// 	cursor: pointer;
-// }
+.mobile-nav h5 {
+	align-self: center;
+	font: normal normal bold 14px/19px BMW;
+	letter-spacing: 0px;
+}
+.mobile-nav .mobile-phone-icon {
+	width: 19px;
+	height: 19px;
+}
+.mobile-nav .header-logo {
+	align-self: center;
+}
 
 .sticky-nav {
 	display: none;
@@ -216,6 +199,9 @@ body {
 .product {
 	margin-bottom: 30px;
 }
+.product .product-photo {
+	width: 100%;
+}
 .product .product-photo:hover {
 	opacity: 0.5;
 	cursor: pointer;
@@ -273,12 +259,23 @@ body {
 	margin-left: 10px;
 }
 
-.sticky-footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+
+.mobile-footer {
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #E6E6E6;
+}
+.mobile-footer p {
+	font: normal normal 300 10px BMW;
+	text-align: center;
+}
+.mobile-footer .footer-bottom {
+	align-items: center;
+	margin-top: 40px;
+}
+.mobile-footer .footer-bottom .brand {
+	width: 50px;
 	height: 50px;
-	box-shadow: #00000029 0 -3px 6px;
 }
 
 
@@ -330,24 +327,17 @@ body {
 	width: 50%;
 }
 .form-field {
+	width: 100%;
+	display: block;
 	border: 0;
 	border-bottom: 1px solid #666;
 	color: #666;
 	outline: 0;
-	font-size: 1.3rem;
+	font: normal normal 300 14px/17px BMW;
 	padding: 7px 0;
 	background: transparent;
 	transition: border-color 0.2s;
-  
-	::placeholder {
-		color: transparent !important;
-	}
-  
-	&:placeholder-shown ~ .form-label {
-		font-size: 1.3rem;
-		cursor: text;
-		top: var(--margin-20);
-	}
+	margin-bottom: 30px;
 }
 .form-label {
 	position: absolute;
@@ -357,7 +347,7 @@ body {
 	font-size: 1rem;
 	color: #666;
 }
-.form-field:focus {
+.form-field:hover {
 	~ .form-label {
 		position: absolute;
 		top: 0;
@@ -367,10 +357,33 @@ body {
 	}
 	padding-bottom: 6px;
 	border-width: 2px;
-	// border-image: linear-gradient(to right, $primary,$secondary);
+	border-image-slice: 1;
+}
+.form-field:hover {
+	~ .form-label {
+		position: absolute;
+		top: 0;
+		display: block;
+		transition: 0.2s;
+		font-size: 1rem;
+	}
+	padding-bottom: 6px;
+	border-width: 2px;
 	border-image-slice: 1;
 }
 
-.form-field{
-	&:required,&:invalid { box-shadow:none; }
-}	
+.cotation-body button {
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		max-width: none;
+	}
+	.products-block .block-title {
+		font: normal normal 300 20px BMW;
+	}
+}

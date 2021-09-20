@@ -11,37 +11,18 @@
 <header></header>
 <body>
 
-	<nav class="container mobile-nav d-block d-md-none">
-		<div class="row col w-100">
-			<div class="col">
-				<div class="d-none d-lg-block">
-					<button class="btn btn-secondary nav-button"><img src="src/icons/telefone.svg">(21) 2042-4442</button>
-					<button class="btn btn-secondary nav-button"><img src="src/icons/360.svg">TOUR VIRTUAL</button>
-					<button class="btn btn-whatsapp nav-button"><img src="src/icons/whatsapp-white.svg">WHATSAPP</button>
-				</div>
-	
-				<div class="nav-link-group d-none d-lg-block">
-					<a class="nav-link">1</a>
-					<a class="nav-link">2</a>
-					<a class="nav-link">3</a>
-					<a class="nav-link">4</a>
-					<a class="nav-link">5</a>
-					<a class="nav-link">7</a>
-					<a class="nav-link">8</a>
-					<a class="nav-link">X</a>
-					<a class="nav-link">Z</a>
-					<a class="nav-link">M</a>
-					<a class="nav-link">i</a>
-					<a class="nav-link">Plug-in-Hybrid</a>
-				</div>
+	<nav class="container-fluid mobile-nav d-block d-lg-none">
+		<div class="row h-100">
+			<div class="col align-self-center">
+				<h5><img class="mobile-phone-icon" src="src/icons/telefone-gray.svg">(21) 2042-4442</h5>
 			</div>
-			<div class="col-1">
+			<div class="col-3 col-sm-1 align-self-center">
 				<img class="header-logo" src="src/imgs/logos/logo-bmw-rio.svg">
 			</div>
 		</div>
 	</nav>
 
-	<nav class="container desktop-nav d-none d-md-block">
+	<nav class="container desktop-nav d-none d-lg-block">
 		<div class="row col w-100">
 			<div class="col">
 				<div class="d-none d-lg-block">
@@ -68,7 +49,7 @@
 				<div class="desktop-dropdown">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 col-md-6 col-lg-3 product">
+							<div class="col-12 col-sm-6 col-lg-3 product">
 								<img class="product-photo" src="src/imgs/veiculos/serie1.png">
 								<div class="product-description">
 									<h5>BMW Série 1</h5>
@@ -82,7 +63,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3 product">
+							<div class="col-12 col-sm-6 col-lg-3 product">
 								<img class="product-photo" src="src/imgs/veiculos/serie1.png">
 								<div class="product-description">
 									<h5>BMW Série 1</h5>
@@ -96,7 +77,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3 product">
+							<div class="col-12 col-sm-6 col-lg-3 product">
 								<img class="product-photo" src="src/imgs/veiculos/serie1.png">
 								<div class="product-description">
 									<h5>BMW Série 1</h5>
@@ -110,7 +91,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-md-6 col-lg-3 product">
+							<div class="col-12 col-sm-6 col-lg-3 product">
 								<img class="product-photo" src="src/imgs/veiculos/serie1.png">
 								<div class="product-description">
 									<h5>BMW Série 1</h5>
@@ -144,10 +125,15 @@
 				Solicitar cotação
 			</h4>
 			<div class="cotation-body">
-				<div class="form-group field">
-					<label for="name" class="form-label">Name</label>
-					<input type="input" class="form-field" placeholder="Name" id="name" />
-				</div>
+				<input type="input" class="form-field" placeholder="Nome" id="nome" />
+				<input type="input" class="form-field" placeholder="E-mail" id="email" />
+				<input type="input" class="form-field" placeholder="Telefone" id="tel" />
+				<input type="input" class="form-field" placeholder="Modelo" id="model" />
+				<input type="input" class="form-field" placeholder="Mensagem" id="message" />
+				<input class="" type="checkbox" id="scales" name="scales" checked>
+				<label for="scales">Aceito a <strong>Politica de Privacidade</strong></label>
+
+				<button class="btn btn-primary mt-3">Enviar</button>
 			</div>
 		</div>
 	</div>
@@ -156,13 +142,13 @@
 		<h1 class="block-title">ESCOLHA SEU BMW</h1>
 
 		<div class="row">
-			<div class="col-12 col-md-6 col-lg-3 product">
+			<div class="col-12 col-sm-6 col-lg-3 product">
 				<img class="product-photo" src="src/imgs/veiculos/serie1.png">
 				<div class="product-description">
 					<h5>BMW Série 1</h5>
-					<div class="product-btns">
-						<button class="btn btn-primary">Cotação</button>
-						<button class="btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
+					<div class="product-btns row">
+						<button class="col btn btn-primary">Cotação</button>
+						<button class="col btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
 					</div>
 	
 					<div class="social-medias">
@@ -174,13 +160,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 product">
+			<div class="col-12 col-sm-6 col-lg-3 product">
 				<img class="product-photo" src="src/imgs/veiculos/m3.png">
 				<div class="product-description">
 					<h5>BMW M3 Competition</h5>
-					<div class="product-btns">
-						<button class="btn btn-primary">Cotação</button>
-						<button class="btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
+					<div class="product-btns row">
+						<button class="col btn btn-primary">Cotação</button>
+						<button class="col btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
 					</div>
 	
 					<div class="social-medias">
@@ -192,13 +178,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 product">
+			<div class="col-12 col-sm-6 col-lg-3 product">
 				<img class="product-photo" src="src/imgs/veiculos/m5.png">
 				<div class="product-description">
 					<h5>BMW M5</h5>
-					<div class="product-btns">
-						<button class="btn btn-primary">Cotação</button>
-						<button class="btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
+					<div class="product-btns row">
+						<button class="col btn btn-primary">Cotação</button>
+						<button class="col btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
 					</div>
 	
 					<div class="social-medias">
@@ -210,13 +196,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 product">
+			<div class="col-12 col-sm-6 col-lg-3 product">
 				<img class="product-photo" src="src/imgs/veiculos/x2.png">
 				<div class="product-description">
 					<h5>BMW X2</h5>
-					<div class="product-btns">
-						<button class="btn btn-primary">Cotação</button>
-						<button class="btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
+					<div class="product-btns row">
+						<button class="col btn btn-primary">Cotação</button>
+						<button class="col btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
 					</div>
 	
 					<div class="social-medias">
@@ -228,13 +214,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 product">
+			<div class="col-12 col-sm-6 col-lg-3 product">
 				<img class="product-photo" src="src/imgs/veiculos/serie-4.png">
 				<div class="product-description">
 					<h5>BMW Série 4</h5>
-					<div class="product-btns">
-						<button class="btn btn-primary">Cotação</button>
-						<button class="btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
+					<div class="product-btns row">
+						<button class="col btn btn-primary">Cotação</button>
+						<button class="col btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
 					</div>
 	
 					<div class="social-medias">
@@ -246,13 +232,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 product">
+			<div class="col-12 col-sm-6 col-lg-3 product">
 				<img class="product-photo" src="src/imgs/veiculos/serie-3.png">
 				<div class="product-description">
 					<h5>BMW Série 3</h5>
-					<div class="product-btns">
-						<button class="btn btn-primary">Cotação</button>
-						<button class="btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
+					<div class="product-btns row">
+						<button class="col btn btn-primary">Cotação</button>
+						<button class="col btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
 					</div>
 	
 					<div class="social-medias">
@@ -264,13 +250,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 product">
+			<div class="col-12 col-sm-6 col-lg-3 product">
 				<img class="product-photo" src="src/imgs/veiculos/z4.png">
 				<div class="product-description">
 					<h5>BMW Z4</h5>
-					<div class="product-btns">
-						<button class="btn btn-primary">Cotação</button>
-						<button class="btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
+					<div class="product-btns row">
+						<button class="col btn btn-primary">Cotação</button>
+						<button class="col btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
 					</div>
 	
 					<div class="social-medias">
@@ -282,13 +268,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 product">
+			<div class="col-12 col-sm-6 col-lg-3 product">
 				<img class="product-photo" src="src/imgs/veiculos/x2.png">
 				<div class="product-description">
 					<h5>BMW Série 2</h5>
-					<div class="product-btns">
-						<button class="btn btn-primary">Cotação</button>
-						<button class="btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
+					<div class="product-btns row">
+						<button class="col btn btn-primary">Cotação</button>
+						<button class="col btn btn-secondary d-sm-inline-block d-md-none">Ligar</button>
 					</div>
 	
 					<div class="social-medias">
@@ -303,7 +289,7 @@
 		</div>
 	</div>
 
-	<footer class="desktop-footer">
+	<footer class="desktop-footer d-none d-lg-block">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -314,6 +300,23 @@
 				<div class="col"><img class="brand" src="src/imgs/logos/logo-bmw-rio.svg"></div>
 				<div class="col"><p class="mb-0">© Copyright © 2021 Lorem ipsum dolor sit amet.</p></div>
 				<div class="col"><p class="mb-0">Feito por:<img class="logo" src="src/imgs/logos/logo-alpes.png"></p></div>
+			</div>
+		</div>
+	</footer>
+
+	<footer class="mobile-footer d-block d-lg-none">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a elementum orci, vitae commodo nibh. In vitae convallis nisl. Morbi rhoncus mattis purus sed commodo. Integer rhoncus ex risus. Proin efficitur elit nunc, ut pulvinar massa egestas in. Fusce quis quam viverra, pretium quam ac, consectetur lectus.</p>
+				</div>
+			</div>
+			<div class="row footer-bottom">
+				<div class="col"><p class="mb-0">© Copyright © 2021 Lorem ipsum dolor sit amet.</p></div>
+			</div>
+			<div class="row footer-bottom">
+				<div class="col"><p class="mb-0">Feito por:<img class="logo" src="src/imgs/logos/logo-alpes.png"></p></div>
+			</div>
 			</div>
 		</div>
 	</footer>
